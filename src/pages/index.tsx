@@ -1,20 +1,15 @@
-import {Flex, Text, Grid,Button, Box, GridItem} from "@chakra-ui/react";
-import Navbar from "../components/Navbar.tsx";
-import WelcomeText from "../components/home/WelcomeText.tsx";
-
+import { Flex } from "@chakra-ui/react";
+import Navbar from "../components/navbar.tsx";
+import HomeText from "../components/home-text.tsx";
 
 const Index = () => {
-    return (
-       <>
-           <Flex flexDirection="column" minHeight="100vh">
-               <Navbar/>
-                <WelcomeText/>
-           </Flex>
-       </>
-    )
-}
-export default Index
-
-
-
-
+  return (
+    <>
+      <Flex flexDirection="column" minHeight="100vh">
+        <Navbar />
+        <HomeText />
+      </Flex>
+    </>
+  );
+};
+export default Index;
