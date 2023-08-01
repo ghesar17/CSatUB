@@ -1,0 +1,5 @@
+7/31/23
+
+getting all the data about all of the classes at UB has and typing it all into this project would take forever so I need some way to get the data
+from the Internet
+
