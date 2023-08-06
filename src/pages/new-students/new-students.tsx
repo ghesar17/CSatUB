@@ -1,14 +1,16 @@
-import Navbar from "../../components/navbar.tsx";
-import Sidebar from "../../components/sidebar.tsx";
-import NewStudentsMain from "../../components/new-students/new-students-main.tsx";
+import Layout from "../../components/layout.tsx";
+import RightSideBar from "../../components/new-students/right-side-bar.tsx";
+import LeftSideBar from "../../components/new-students/left-side-bar.tsx";
+import Main from "../../components/new-students/main.tsx";
 
 const NewStudents = () => {
   return (
     <>
-      {" "}
-      <Navbar />
-      <Sidebar />
-      <NewStudentsMain />
+      <Layout
+        main={<Main />}
+        rightsidebar={<RightSideBar />}
+        lowersidebar={<LeftSideBar />}
+      />
     </>
   );
 };

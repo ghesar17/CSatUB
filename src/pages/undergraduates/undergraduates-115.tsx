@@ -1,13 +1,16 @@
-import Navbar from "../../components/navbar.tsx";
-import Sidebar from "../../components/sidebar.tsx";
-import UndergraduatesCoursesSidebar from "../../components/undergraduates/undergraduates-courses-sidebar.tsx";
+import CoursesSidebar from "../../components/undergraduates/courses-sidebar.tsx";
+import Course115 from "../../components/undergraduates/course-115.tsx";
+import Layout from "../../components/layout.tsx";
+import Course115RightSidebar from "../../components/undergraduates/course-115-right-sidebar.tsx";
 
 const Undergraduates115 = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <UndergraduatesCoursesSidebar />
+      <Layout
+        lowersidebar={<CoursesSidebar />}
+        rightsidebar={<Course115RightSidebar />}
+        main={<Course115 />}
+      />
     </>
   );
 };

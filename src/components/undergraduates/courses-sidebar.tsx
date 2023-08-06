@@ -1,6 +1,6 @@
 import { Text, VStack, Box, Flex } from "@chakra-ui/react";
 
-const UndergraduatesCoursesSidebar = () => {
+const CoursesSidebar = () => {
   return (
     <>
       <Text
@@ -93,4 +93,4 @@ const UndergraduatesCoursesSidebar = () => {
     </>
   );
 };
-export default UndergraduatesCoursesSidebar;
+export default CoursesSidebar;

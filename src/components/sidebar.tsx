@@ -33,7 +33,7 @@ const Sidebar = () => {
                 <svg
                   stroke={"currentColor"}
                   fill={"white"}
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox="0 0 496 512"
                   height="1em"
                   width="1em"
@@ -61,7 +61,7 @@ const Sidebar = () => {
             <Flex align="center" direction={"row"}>
               <Box
                 bg={
-                  location.pathname === "/undergraduates"
+                  location.pathname.includes("undergraduates")
                     ? "teal.500"
                     : "transparent"
                 }
@@ -80,7 +80,7 @@ const Sidebar = () => {
               >
                 <FaGraduationCap
                   color={
-                    location.pathname === "/undergraduates"
+                    location.pathname.includes("undergraduates")
                       ? "teal.500"
                       : "teal.500"
                   }
@@ -90,11 +90,7 @@ const Sidebar = () => {
               <Text
                 _hover={{ color: "white" }}
                 color={
-                  location.pathname === "/undergraduates" ||
-                  "/undergraduates/115" ||
-                  "/undergraduates/116" ||
-                  "/undergraduates/250" ||
-                  "/undergraduates/220"
+                  location.pathname.includes("undergraduates")
                     ? "cyan"
                     : "gray.400"
                 }
